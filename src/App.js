@@ -15,7 +15,7 @@ function App() {
   });
 
   // Setting up the api url with the key to a const 
-  const apiurl = `http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}`;
+  const apiurl = `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}`;
   
   const search = (e) => {
     if (e.key === "Enter") {
