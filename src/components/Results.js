@@ -5,7 +5,6 @@ const Results = ({ results }) => {
 
     return (
         <section className="results">
-            
             {results.map(result => (
                 <Result key={result.imbID} result={result} />
             ))}

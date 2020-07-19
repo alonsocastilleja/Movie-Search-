@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Result = ({ result }) => {
+    console.log(result)
     return ( 
         <div className="result">
            <img src={result.Poster} alt="hi" width={"100%"}
