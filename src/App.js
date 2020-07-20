@@ -8,15 +8,16 @@ const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 
 const App = () => {
 
+  // I am setting the state properties of the application in the useState hook below.
   const [ movieResultsState, setState ] = useState({
-    s: "",
-    results: [],
-    selected: {}
+    s: "",          // Value in the search bar
+    results: [],    // Movie results gathered from the API request
   });
   
   // Setting up the api url with the key to a const 
   const apiurl = `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}`;
   
+  // Event listener function that creates an axios request based on the search bar input
   const search = (e) => {
     if (e.key === "Enter") {
       axios(apiurl + "&s=" + movieResultsState.s)
